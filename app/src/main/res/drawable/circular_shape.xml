@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="30dp"
+        android:height="30dp"
+        android:viewportWidth="34"
+        android:viewportHeight="34"
+        >
+
+
+    <group
+            android:name="strokeGroup"
+            android:translateX="3"
+            android:translateY="3">
+        <path
+                android:name="stroke"
+                android:fillColor="#00000000"
+                android:fillType="evenOdd"
+                android:strokeWidth="5"
+                android:pathData="M14,1.5C7.1,1.5 1.5,7.1 1.5,14C1.5,20.9 7.1,26.5 14,26.5C20.9,26.5   26.5,20.9 26.5,14C26.5,7.1 20.9,1.5 14,1.5Z"
+                android:strokeColor="#88D443" />
+    </group>
+
+</vector>
+
+
+        <!--<path-->
+        <!--android:name="v"-->
+        <!--android:fillColor="#00FF00"-->
+        <!--android:strokeColor="#FF0000"-->
+        <!--android:pathData="M300,70 l 0,-70 70,70 0,0 -70,70z" />-->
+        <!-- -->
+
+
+        <!--    <group-->
+        <!--            android:name="circle"-->
+        <!--            android:pivotX="0.0"-->
+        <!--            android:pivotY="0.0"-->
+        <!--            android:rotation="0.0" >-->
+        <!--        </group>-->

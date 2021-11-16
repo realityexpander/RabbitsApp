@@ -24,15 +24,17 @@ class MainViewModel @Inject constructor(
     }
 
     fun getRandomRabbit() {
+        _state.value = state.value.copy(isLoading = true)
         viewModelScope.launch {
             try {
                 _state.value = state.value.copy(isLoading = true)
                 _state.value = state.value.copy(
-                    rabbit = api.getRandomRabbit(),
-                    isLoading = false
+                    rabbit = api.getRandomRabbit()
                 )
             } catch(e: Exception) {
                 Log.e("MainViewModel", "getRandomRabbit: ", e)
+                _state.value = state.value.copy(isLoading = false)
+            } finally {
                 _state.value = state.value.copy(isLoading = false)
             }
         }
